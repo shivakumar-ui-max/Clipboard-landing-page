@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+	--cyne: hsl(171, 66%, 44%);
+	--Light-Blue: hsl(233, 100%, 69%);
+	--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+	--Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Bai Jamjuree', sans-serif;
+	text-align: center;
+	list-style: none;
+overflow-x: hidden;
+}
+
+/* ========== >> typography <<========= */
+
+h1,
+h2,
+h3 {
+	font-size: 2rem;
+	color: var(--Dark-Grayish-Blue);
+}
+
+p {
+	font-size: 1.125rem;
+	color: var(--Grayish-Blue);
+
+}
+
+body {
+
+	background-image: url(./images/bg-header-mobile.png);
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
+	/* margin: 1rem 1rem; */
+	/* padding-top:3rem; */
+	/* padding-block-start: 3rem; */
+	min-height: 100vh;
+
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	/* display: inline-block; */
+
+}
+
+/* ========== >> header <<========= */
+header {
+	margin-block-start: 7rem;
+}
+
+header figure {
+	max-width: 6rem;
+	max-height: 6rem;
+	margin: 3rem auto;
+
+}
+
+header h1 {
+	margin: 1rem;
+}
+
+.btn {
+	margin: 2rem;
+}
+
+.btn li:nth-child(1) {
+	background-color: var(--cyne);
+	padding: 1rem;
+	color: #fff;
+	border-radius: 2rem;
+	box-shadow: 0 10px 10px 0 hsla(171, 66%, 44%, .32);
+}
+
+.btn li:nth-child(2) {
+	background-color: var(--Light-Blue);
+	padding: 1rem;
+	color: #fff;
+	border-radius: 2rem;
+	box-shadow: 0 10px 10px 0 hsla(233, 100%, 69%, .32);
+	margin: 1rem 0;
+}
+
+
+.container-1 {
+	margin-top: 7rem;
+}
+
+.container-1 h2 {
+	margin: 1rem;
+}
+
+.container-1>p {
+	margin: 1rem;
+}
+
+.container-1 figure {
+	margin: 3rem 2rem;
+}
+
+.container-1 p {
+	margin: 1rem;
+}
+
+
+.container-2 {
+	margin-top: 5rem;
+}
+
+.container-2 h2 {
+	margin: 1rem;
+}
+
+.container-2 p {
+	margin: 1rem;
+}
+
+.container-2 figure {
+	margin: 4rem 0;
+}
+
+.container-3 h2 {
+	margin: 1rem;
+}
+
+.container-3 p {
+	margin: 1rem;
+}
+
+.container-3 figure {
+	margin: 2rem;
+}
+
+.brand figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 7rem;
+	max-height: 7rem;
+	margin: 4rem auto;
+}
+
+.container-4 {
+	margin: 2rem;
+}
+
+.container-4 h2 {
+	margin: 1rem;
+}
+
+/* .container-4 .btn{
+              margin-bottom: 6rem;
+} */
+
+
+footer {
+
+	background-color: hsla(201, 11%, 66%, 0.2);
+	padding: 1rem 0;
+
+}
+
+footer figure {
+	max-width: 3rem;
+	max-height: 3rem;
+	margin: 2rem auto;
+}
+
+.info p {
+	margin: 1rem 0;
+	color: var(--Dark-Grayish-Blue);
+}
+
+footer .social ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+ul i {
+	font-size: 1.3rem;
+	margin: 2rem auto;
+}
+
+/* ========== >> media querry<<========= */
+@media (min-width:600px) {
+	body {
+
+		background-image: url(./images/bg-header-desktop.png);
+		background-size: contain;
+		background-position: top;
+		background-repeat: no-repeat;
+
+	}
+
+
+	.btn{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+		transition: all 0.5s ease-in-out;
+		cursor: pointer;
+	}
+	.btn li:nth-child(1):hover {
+		filter: opacity(0.7);
+	}
+	.btn li:nth-child(2):hover {
+		filter: opacity(0.7);
+	}
+	.container-1 p {
+		margin: 0 18rem;
+		text-align: center;
+	}
+	.container-1 .flex{
+		display: flex;
+	}
+	.flex figure{
+		margin: 2rem 0;
+		padding: 0;
+		transform: translateX(-2rem);
+	}
+	.container-1 .flex ul h3{
+		margin: 1rem 0;
+		text-align: left;
+		transform: translateX(8.7rem);
+	}
+		.container-1 p{
+			text-align: left;
+		}
+		.container-1 .flex ul{
+			margin: 2rem 0;
+
+		}
+		.wrapper,
+		.brand{
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			margin: 5rem 0;
+
+		}
+		.black-list{
+
+			max-width:25rem;
+		}
+		footer{
+			display:flex;
+			justify-content: space-around;
+		}
+		footer .info{
+
+			display: flex;
+			justify-content:center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 2rem;
+			transition: all .5s ease-in-out;
+			cursor: pointer;
+
+		}
+		footer .social ul {
+			gap: 1rem;
+			margin: 1rem 0;
+			transition: all .5s ease-in-out;
+			cursor: pointer;
+		}
+		.info p:hover{
+			color: var(--cyne);
+		}
+		.social ul li:hover{
+			color: var(--cyne);
+		}
+
+
+
+
+}
